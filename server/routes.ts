@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer } from "http";
 import { storage } from "./storage";
-import { generateSurveyQuestions, analyzeSurveyResponses } from "./openai";
+import { generateSurveyQuestions, analyzeSurveyResponses } from "./ai-service";
 import { insertUserSchema, insertSurveySchema, insertResponseSchema } from "@shared/schema";
 
 export async function registerRoutes(app: Express) {
